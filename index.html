@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Project Summary</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="src/favicon-16x16.png" type="image/png">
+      <link rel="icon" href="src/favicon-32x32.png" type="image/png">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      pre {
+        background-color: #efefef;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      label,
+      button {
+        margin-right: 10px;
+      }
+
+      #result {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+      }
+
+      .youtube-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      code {
+        font-family: monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>FizzBuzz Checker</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="e.g., 15">
+    <button onclick="checkSingleResult()">Check Single Result</button>
+    <button onclick="checkDetailedResult()">Check Detailed Result</button>
+    <div id="result"></div>
+    <h1>FizzBuzz Project Summary</h1>
+    <h2>What I Learned</h2>
+    <p> While working on this project, I learned the following: </p>
+    <ul>
+      <li>How to set up a <strong>TypeScript project</strong> using <code>tsc</code> to compile TypeScript into JavaScript. </li>
+      <li>The basics of TypeScript, including type annotations, functions, and methods.</li>
+      <li>How to create a simple <strong>FizzBuzz program</strong> to handle user input and display results dynamically. </li>
+      <li>Integrating TypeScript with HTML by generating JavaScript files in a <code>dist</code> folder. </li>
+    </ul>
+    <h2>Project Functionality</h2>
+    <p> This project includes the following functionality: </p>
+    <ol>
+      <li>A text input where users can enter a number.</li>
+      <li>A "Check" button that triggers the FizzBuzz logic.</li>
+      <li>A result display area that shows: <ul>
+          <li>
+            <strong>"Fizz"</strong> for numbers divisible by 3.
+          </li>
+          <li>
+            <strong>"Buzz"</strong> for numbers divisible by 5.
+          </li>
+          <li>
+            <strong>"FizzBuzz"</strong> for numbers divisible by both 3 and 5.
+          </li>
+          <li>The entered number for others.</li>
+        </ul>
+      </li>
+    </ol>
+    <div>
+      <h2>Where I stuck</h2>
+      <p>During the TypeScript tutorial, it was explained that when running the tsc command, the compiled JavaScript file is automatically saved in the dist folder. However, in my setup, the compiled files were saved in the src folder instead.</p>
+      <p>To address this issue, I watched the following video, which provided a detailed explanation of how to configure the TypeScript compiler to save files in the dist folder by updating the tsconfig.json file:</p>
+    </div>
+    <div class="youtube-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4zdBk6wisxc?si=05QNLfgM8kShARBp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <h2>Next Steps</h2>
+    <p> Moving forward, I plan to explore more advanced TypeScript concepts, such as interfaces, generics, and asynchronous programming. Additionally, I will integrate this project into my learning portfolio. </p>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
