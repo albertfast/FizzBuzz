@@ -64,6 +64,3 @@ To run and test the application locally:
 Example Usage
 1.  Enter a number in the input field and press "Check Single Result" to get the FizzBuzz output for that number.
 2.  Press "Check Detailed Results" to see FizzBuzz outputs for all numbers from 1 to the entered number.
-
-Author
-@albertfast
